@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <>
       <Layout title="Home Page">
         <h1>Home</h1>
-        <Image src="/1.png" width={200} height={200} alt="profile" />
+
       </Layout>
     </>
   );
