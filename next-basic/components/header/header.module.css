@@ -1,16 +1,18 @@
 .container {
   padding: 8px;
   max-width: auto;
-  margin: auto;
-  background-color: #256d85;
+  background-color: #06283d;
 }
 
 .list {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
 }
-
+.listh {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
 .item {
   color: white;
   margin: 0px 16px;
@@ -21,4 +23,20 @@
 
 .item:active {
   color: lightgray;
+}
+
+.h3 {
+  color: white;
+  margin: 0px 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .h3 {
+    margin-left: 0px;
+    position: left;
+  }
+  .listh {
+    justify-content: space-between;
+  }
 }

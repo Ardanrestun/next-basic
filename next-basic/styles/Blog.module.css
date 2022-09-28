@@ -3,6 +3,7 @@
   padding: 16px;
   text-align: center;
   background-color: #ffff;
+  border-radius: 10px;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -22,7 +23,11 @@
   display: table;
   clear: both;
 }
-
+.lists {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
 .pbody {
   display: -webkit-box;
   -webkit-line-clamp: 4; /* number of lines to show */
@@ -38,6 +43,22 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.cardid {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  margin: auto;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+.columnid {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+  margin: 50px auto auto auto;
 }
 
 @media screen and (max-width: 600px) {
