@@ -1,8 +1,8 @@
 .container {
   padding: 8px;
-  box-shadow: 3px 3px 11px 3px rgb(0, 0, 0, 30%);
-  max-width: 1080px;
+  max-width: auto;
   margin: auto;
+  background-color: #256d85;
 }
 
 .list {
@@ -12,5 +12,13 @@
 }
 
 .item {
+  color: white;
   margin: 0px 16px;
+}
+.item:hover {
+  color: lightgray;
+}
+
+.item:active {
+  color: lightgray;
 }

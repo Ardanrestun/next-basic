@@ -2,8 +2,10 @@ import style from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <div>
-      <p className={style.title}>Made With Ardan Restu</p>
-    </div>
+    <footer className={style.footer}>
+      <div className={style.container}>
+        <p className={style.title}>NextJS Basic | Ardan Restu N </p>
+      </div>
+    </footer>
   );
 }
