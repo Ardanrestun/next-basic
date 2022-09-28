@@ -1,20 +1,26 @@
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin: 50px auto auto auto;
+}
+
 .card {
-  padding: 16px;
-  width: 300px;
-  box-shadow: 6px 5px 10px rgb(0, 0, 0, 30%);
-  border-radius: 12px;
-  margin: 25px 23px 10px 10px;
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  justify-content: center;
-  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 7px;
+  text-align: center;
+  background-color: #ffff;
+  border-radius: 10px;
 }
 
 .a {
-  text-align: center;
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
 }
 .b {
-  padding-left: 15px;
+  color: grey;
+  font-size: 18px;
 }
 .c {
   text-align: center;
@@ -41,25 +47,14 @@
   padding: 10px;
 }
 
-.container > div {
-  text-align: left;
-  padding: 20px 0;
-}
-.table {
-  margin-top: 20px;
-  margin-left: 50px;
-}
-.row {
-}
-.cellq {
-  font-size: 16px;
-  font-weight: 600;
+.img {
+  width: 100px;
+  height: 100px;
 }
 
-.cellw {
-  font-size: 16px;
-}
-
-.td1 {
-  font-weight: 600;
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin-top: 30px;
+  }
 }

@@ -14,6 +14,7 @@ interface User {
     city: string;
     state: string;
   };
+  department: string;
 }
 
 interface userProps {
@@ -31,35 +32,17 @@ export default function index(props: userProps) {
           <div
             onClick={() => router.push(`/users/${user.id}`)}
             key={user.id}
-            className={Styles.card}>
-            <h4 className={Styles.a}>Data Fake User</h4>
-            <img
-              src={user.image}
-              width={100}
-              height={100}
-              className={Styles.d}
-            />
-            <table>
-              <tbody>
-                <tr>
-                  <td className={Styles.td1}>Name</td>
-                  <td className={Styles.td2}>:</td>
-                  <td className={Styles.td2}>{user.maidenName}</td>
-                </tr>
-                <tr>
-                  <td className={Styles.td1}>Email</td>
-                  <td className={Styles.td2}>:</td>
-                  <td className={Styles.td2}>{user.email}</td>
-                </tr>
-                <tr>
-                  <td className={Styles.td1}>City</td>
-                  <td className={Styles.td2}>:</td>
-                  <td className={Styles.td2}>
-                    {user.address.city} , {user.address.state}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            className={Styles.column}>
+            <div className={Styles.card}>
+              <img
+                src={user.image}
+                alt={user.maidenName}
+                className={Styles.img}
+              />
+              <p className={Styles.a}>{user.maidenName}</p>
+              <p className={Styles.b}>{user.company.department}</p>
+              <p>{user.company.name}</p>
+            </div>
           </div>
         );
       })}
